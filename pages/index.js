@@ -16,18 +16,18 @@ export default class extends React.Component {
 
   */
 
-  static async getInitialProps ({  }) {
-
+  static async getInitialProps ({ pathname, query, asPath }) {
+    return { pathname, query, asPath }
   }
 
   render () {
     return (
       <div>
         <Head>
-          <title>Htaccess Generator</title>
+          <title>Next Js gh-pages Project Boilerplate</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <h1>Welcome to Htaccess Generator!</h1>
+        <h1>Welcome to Next.js gh-pages Project Boilerplate!</h1>
       </div>
     )
   }
