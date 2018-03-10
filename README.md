@@ -1,18 +1,10 @@
-# Next Js gh-pages Project Boilerplate
+# Next.js gh-pages Project Boilerplate
 
 [next js gh pages project boilerplate site](https://thierryc.github.io/next-js-gh-pages-project-boilerplate/)
 
 This project is a React, Next, and gh-pages serverless site expriement.
 
 ## How to use.
-
-### Dev
-
-```sh
-
-> npm run dev
-
-```
 
 ### Dev
 

@@ -1,0 +1,71 @@
+{
+  "plugins": [
+    "inline-react-svg",
+    "babel-plugin-root-import",
+    ["inline-json-import", {}]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "next/babel"
+      ],
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "camelCase": true,
+            "extensions": [".css", ".scss"],
+            "append": [ "postcss-cssnext" ],
+            "extractCss": {
+                "dir": "./static/css/",
+                "relativeRoot": "./",
+                "filename": "[path]/[name].css"
+            },
+            "preprocessCss": "./pre-processor-dev.js"
+          }
+        ]
+      ]
+    },
+    "production": {
+      "presets": [
+        "next/babel"
+      ],
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "camelCase": true,
+            "extensions": [".css", ".scss"],
+            "append": [ "postcss-cssnext" ],
+            "extractCss": {
+                "dir": "./static/css/",
+                "relativeRoot": "./",
+                "filename": "[path]/[name].css"
+            },
+            "preprocessCss": "./pre-processor.js"
+          }
+        ],
+        ["transform-react-remove-prop-types"]
+      ]
+    },
+    "test": {
+      "presets": [
+        ["env", { "modules": "commonjs" }],
+        "next/babel"
+      ],
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "camelCase": true,
+            "extensions": [".css", ".scss"],
+            "append": [ "postcss-cssnext" ],
+            "extractCss": {
+                "dir": "./static/css/",
+                "relativeRoot": "./",
+                "filename": "[path]/[name].css"
+            },
+            "preprocessCss": "./pre-processor-dev.js"
+          }
+        ]
+      ]
+    }
+  }
+}

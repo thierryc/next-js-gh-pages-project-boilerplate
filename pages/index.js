@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
+import { Container, Row, Cell } from '../components/layout-grids'
+import mainCss from '../styles/main.scss'
+
+import info from '../package.json'
 
 export default class extends React.Component {
   /*
@@ -21,13 +25,51 @@ export default class extends React.Component {
   }
 
   render () {
+
     return (
       <div>
         <Head>
           <title>Next Js gh-pages Project Boilerplate</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="stylesheet" type="text/css" href="/static/css/components/layout-grids/grids.css" />
         </Head>
-        <h1>Welcome to Next.js gh-pages Project Boilerplate!</h1>
+
+        <Container className="links">
+          <Row>
+            <Cell tablet={8} desktop={12} align={'middle'}>
+              <h1>Welcome to Next.js gh-pages Project Boilerplate!</h1>
+            </Cell>
+          </Row>
+          <Row>
+            <Cell tablet={4} desktop={6} align={'middle'}>
+              <div>
+                
+              </div>
+            </Cell>
+            <Cell tablet={4} desktop={6} align={'middle'}>
+              <div>
+                content
+              </div>
+            </Cell>
+          </Row>
+          <Row>
+            <Cell phone={4} tablet={3} desktop={4} align={'middle'}>
+              <div>
+                content
+              </div>
+            </Cell>
+            <Cell phone={4} tablet={3} desktop={4} align={'middle'}>
+              <div>
+                content
+              </div>
+            </Cell>
+            <Cell phone={4} tablet={2} desktop={4} align={'middle'}>
+              <div>
+                content
+              </div>
+            </Cell>
+          </Row>
+        </Container>
       </div>
     )
   }

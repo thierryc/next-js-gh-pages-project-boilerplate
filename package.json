@@ -1,14 +1,24 @@
 {
-  "name": "htaccess-generator",
-  "version": "1.0.0",
-  "description": "",
+  "name": "next-js-gh-pages-project-boilerplate",
+  "version": "1.0.0-beta1",
+  "description": "Next.js gh-pages Project Boilerplate",
   "main": "index.js",
   "dependencies": {
-    "next": "^3.2.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "@material/layout-grid": "^0.4.4",
+    "babel-plugin-root-import": "^5.1.0",
+    "classnames": "^2.2.5",
+    "next": "^3.2.3",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-css-modules-transform": "^1.5.0",
+    "babel-plugin-inline-json-import": "^0.2.1",
+    "babel-plugin-inline-react-svg": "^0.4.0",
+    "node-sass": "^4.7.2",
+    "postcss": "^6.0.19",
+    "postcss-cssnext": "^3.1.0"
+  },
   "scripts": {
     "dev": "next",
     "serve": "next build && next export && http-server out",
