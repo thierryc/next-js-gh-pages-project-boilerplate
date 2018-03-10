@@ -6,9 +6,9 @@
   "dependencies": {
     "@material/layout-grid": "^0.4.4",
     "classnames": "^2.2.5",
-    "next": "^3.2.3",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-plugin-css-modules-transform": "^1.5.0",
