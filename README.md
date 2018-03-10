@@ -55,6 +55,6 @@ Build, export your site in your out folder and push it into your gh-pages branch
 
 ```sh
 
-> npm run Deploy
+> npm run deploy
 
 ```
